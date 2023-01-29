@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #third {
+            padding: 50%;
+            margin: auto;
+            height: 200px;
+            width:330px;
+        }
+
+        #third>div:nth-child(1) {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 2%;
+        }
+
+        #third>div:nth-child(2) {
+            font-size: 13px;
+            color: grey;
+            text-align: left;
+            margin-left: 15%;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        #third>div:nth-child(3){
+            margin-top: 20px;
+        }
+        #third>div:nth-child(3)>label {
+            font-size: 15px;
+            font-weight: bold;
+            
+        }
+
+        #third>div:nth-child(3)>fieldset {
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        #third>div:nth-child(3)>fieldset>legend {
+            font-size: 12px;
+        }
+
+        #third>div:nth-child(3)>fieldset>input {
+            border: none;
+            outline: none;
+        }
+        #third>div:nth-child(4){
+            margin-top: 20px;
+            width: 330px;
+        }
+        #third>div:nth-child(4)>label {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #one{
+            border-radius: 5px; 
+            height: 40px;
+        }
+        #one>legend{
+            font-size: 12px;
+        }
+        #one>input{
+            border: none;
+            outline: none; 
+            width: 90px;
+        }
+        #two{
+            border-radius: 5px; 
+        }
+        #two>legend{
+            font-size: 12px;
+        }
+        #two>input{
+            border: none;
+            outline: none; 
+            width: 230px;
+            
+        }
+        #three{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 30%;
+        }
+        #third>div:nth-child(5){
+            display: flex;
+            justify-content: center;
+            height:"35px";
+            width:"240%";
+            margin-top: 20px;
+            background-color:#664de5;
+            font-Size: "11px";  
+            text-transform: none;
+            padding: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #third>div:nth-child(5)>button{
+            background-color: #664de5;
+            border: none;
+            outline: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="third">
+        <div>Let's set up a home for all your work</div>
+        <div>You can always create another workspace later.</div>
+        <div>
+            <label>Workspace Name</label>
+            <fieldset>
+                <legend>Eden</legend>
+                <input type="text">
+            </fieldset>
+        </div>
+        <div>
+            <label>Workspace URL (Optional)</label>
+            <div id="three">
+            <fieldset id="one">
+                <legend>WWW.eden.com</legend>
+                <input type="url">
+            </fieldset>
+            <fieldset id="two">
+                <legend>Example</legend>
+                <input type="text">
+            </fieldset>
+        </div>
+        </div>
+        <div>
+            <button onclick="">Create Workspace</button>
+        </div>
+    </div>
+</body>
+
+</html>

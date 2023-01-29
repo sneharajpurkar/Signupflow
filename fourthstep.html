@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #fourth{
+            margin: auto;
+            padding: 15%;
+            /* border: 1px solid black; */
+            height: 100px;
+            width: 30%;
+        }
+        #last{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         #fourth>div:nth-child(1){
+            height: 50px; 
+            width: 50px;
+            color:#664de5;
+            margin-left: 160px;
+            font-size:300%;
+        }
+        #fourth>div:nth-child(2){
+            font-Size:25px; 
+            font-weight: bold; 
+            margin: 5%;
+            text-align: center;
+        }
+        #fourth>div:nth-child(3){
+            font-size: small;
+            color: grey; 
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        #last>div:nth-child(2) {
+            font-size: medium;
+        
+        }
+
+        #button>button{
+            height:35px;
+             /* width:70%;  */
+             margin-left: 45px;
+             margin-top: 18px;
+             background-Color: #664de5; 
+             font-Size: 15px;  
+             text-Transform: none; 
+             width: 80%;
+             border: none;
+             outline: none;
+             color: white;
+             border-radius: 5px;
+             cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="fourth">
+        
+        <div>
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+        </div>
+        <div>Congratulation, Sneha!</div>
+        <div>You have completed on boarding, you can start using the Eden!</div>
+        
+        <div id="button" onclick="">
+            <button>Lauch Eden</button>
+        </div>
+    </div>
+</body>
+
+</html>
